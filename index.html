@@ -1,5 +1,3 @@
-<!-- https://www.youtube.com/watch?v=LMHX-UVgJVE&ab_channel=divcode -->
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -14,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="menu container">
         <a href="#" class="logo">Logo</a>
         <input type="checkbox" id="menu" />
@@ -24,7 +22,7 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Productos</a></li>
-            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
         <div>
@@ -42,11 +40,12 @@
                       <th>Imagen</th>
                       <th>Nombre</th>
                       <th>Precio</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody></tbody>
                 </table>
-                <a href="" class="btn-3" id="vaciar-carrito">Vaciar Carrito</a>
+                <a href="#" class="btn-3" id="vaciar-carrito">Vaciar Carrito</a>
               </div>
             </li>
           </ul>
@@ -107,7 +106,9 @@
         </div>
       </div>
     </header>
+
     <hr />
+
     <section class="promos container" id="lista-1">
       <h2>Promociones</h2>
       <div class="categories">
@@ -116,24 +117,9 @@
             <h3>Promo 1</h3>
             <div class="prices">
               <p class="prices-1">$199</p>
-              <p class="prices-2">$150</p>
+              <p class="precio">$150</p>
             </div>
-            <a href="" class="agregar-carrito btn-3" data-id="1"
-              >Agregar al Carrito</a
-            >
-          </div>
-          <div class="categoria-img">
-            <img src="images/ph1.png" alt="imagen ph1-png" />
-          </div>
-        </div>
-        <div class="categorie">
-          <div class="categorie-1">
-            <h3>Promo 1</h3>
-            <div class="prices">
-              <p class="prices-1">$199</p>
-              <p class="prices-2">$150</p>
-            </div>
-            <a href="" class="agregar-carrito btn-3" data-id="1"
+            <a href=#" class="agregar-carrito btn-3" data-id="1"
               >Agregar al Carrito</a>
           </div>
           <div class="categoria-img">
@@ -145,9 +131,9 @@
             <h3>Promo 2</h3>
             <div class="prices">
               <p class="prices-1">$199</p>
-              <p class="prices-2">$150</p>
+              <p class="precio">$150</p>
             </div>
-            <a href="" class="agregar-carrito btn-3" data-id="2"
+            <a href=#" class="agregar-carrito btn-3" data-id="2"
               >Agregar al Carrito</a
             >
           </div>
@@ -160,7 +146,7 @@
             <h3>Promo 3</h3>
             <div class="prices">
               <p class="prices-1">$199</p>
-              <p class="prices-2">$150</p>
+              <p class="precio">$150</p>
             </div>
             <a href="" class="agregar-carrito btn-3" data-id="3"
               >Agregar al Carrito</a
@@ -175,7 +161,7 @@
             <h3>Promo 4</h3>
             <div class="prices">
               <p class="prices-1">$199</p>
-              <p class="prices-2">$150</p>
+              <p class="precio">$150</p>
             </div>
             <a href="" class="agregar-carrito btn-3" data-id="4"
               >Agregar al Carrito</a
@@ -186,11 +172,14 @@
           </div>
         </div>
       </div>
+
     </section>
+
     <hr />
-    <section class="products container">
+    
+    <section class="products container" id="lista-2">
       <h2>Nuevos Productos</h2>
-      <div class="swiper myswiper-2">
+      <div class="swiper mySwiper-2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="product">
@@ -199,7 +188,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="5"
+                <a href="#" class="agregar-carrito btn-3" data-id="5"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -212,7 +201,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="6"
+                <a href="#" class="agregar-carrito btn-3" data-id="6"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -225,7 +214,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="7"
+                <a href="#" class="agregar-carrito btn-3" data-id="7"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -238,7 +227,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="8"
+                <a href="#" class="agregar-carrito btn-3" data-id="8"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -249,8 +238,10 @@
         <div class="swiper-nutton-prev"></div>
       </div>
     </section>
+
     <hr />
-    <section class="products container">
+
+    <section class="products container" id="lista-3">
       <h2>Productos</h2>
       <div class="swiper myswiper-2">
         <div class="swiper-wrapper">
@@ -261,7 +252,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="9"
+                <a href="#" class="agregar-carrito btn-3" data-id="9"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -274,7 +265,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="10"
+                <a href="#" class="agregar-carrito btn-3" data-id="10"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -287,7 +278,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="11"
+                <a href="#" class="agregar-carrito btn-3" data-id="11"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -300,7 +291,7 @@
                 <h3>Elisyum</h3>
                 <p>calidad premium</p>
                 <p class="precio">$200</p>
-                <a href="" class="agregar-carrito btn-3" data-id="12"
+                <a href="#" class="agregar-carrito btn-3" data-id="12"
                   >Agregar al Carrito</a
                 >
               </div>
@@ -311,7 +302,9 @@
         <div class="swiper-nutton-prev"></div>
       </div>
     </section>
+
     <hr />
+    
     <footer class="footer container">
       <div class="link">
         <h3>Lorem</h3>

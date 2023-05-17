@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper-1", {
     loop: true,
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable:true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -15,7 +15,7 @@ var swiper = new Swiper(".mySwiper-1", {
 var swiper = new Swiper(".mySwiper-2", {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
+    loop:true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
@@ -39,7 +39,7 @@ const carrito = document.getElementById('carrito');
 const elementos1 = document.getElementById('lista-1');
 const elementos2 = document.getElementById('lista-2');
 const elementos3 = document.getElementById('lista-3');
-const lista = document.querySelector('#lista-carrito tbady');
+const lista = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
 cargarEventListeners();
@@ -76,7 +76,7 @@ function insertarCarrito(elemento) {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>
-            <img src="${elemento.imagen}" width = 100>
+            <img src="${elemento.imagen}" width=100>
         </td>
         <td>
             ${elemento.titulo}
@@ -85,16 +85,17 @@ function insertarCarrito(elemento) {
             ${elemento.precio}
         </td>
         <td>
-            <a href="#" class = "borrar" data-id="${elemento.id}">X</a>
+            <a href="#" class="borrar" data-id="${elemento.id}">X</a>
         </td>
     `;
+
     lista.appendChild(row);
 }
 
 function eliminarElemento(e) {
     e.preventDefault();
     let elemento,
-    elementoId;
+        elementoId;
 
     if(e.target.classList.contains('borrar')) {
         e.target.parentElement.parentElement.remove();
