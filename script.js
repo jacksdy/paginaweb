@@ -32,6 +32,26 @@ var swiper = new Swiper(".mySwiper-2", {
         }
     }
 });
+var swiper = new Swiper(".mySwiper-3", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop:true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints : {
+        0:{
+            slidesPerView: 1
+        },
+        520:{
+            slidesPerView: 2
+        },
+        950:{
+            slidesPerView: 3
+        }
+    }
+});
 
 //Carrito
 
